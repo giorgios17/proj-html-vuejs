@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="d-flex text-center gap-5 mt-5">
-      <CardItem
+      <SushiCard
         v-for="(item, index) in foodType"
         :key="index"
         :img="item.img"
@@ -27,7 +27,9 @@
 </template>
 
 <script>
-import CardItem from "./CardItem.vue";
+// IMPORT COMPONENT
+import SushiCard from "./SushiCard.vue";
+// IMPORT IMAGES
 import Sushi1 from "@/assets/sushi-1.png";
 import Sushi2 from "@/assets/sushi-2.png";
 import Sushi3 from "@/assets/sushi-3.png";
@@ -35,7 +37,7 @@ import Sushi3 from "@/assets/sushi-3.png";
 export default {
   name: "FirstContent",
   components: {
-    CardItem,
+    SushiCard,
   },
   data() {
     return {
@@ -54,7 +56,7 @@ export default {
         },
         {
           img: Sushi2,
-          title: "Perfetct for groups",
+          title: "Perfect for groups",
           description:
             "Quam eu proin sit massa condimentum. Volutpat non pulvinar aliquet nunc. Orci elementum in aliquet a gravida vivamus aliquam turpis vitae.",
           linkTitle: "Make a reservation",
@@ -77,11 +79,7 @@ export default {
 .leftside {
   padding: 70px;
   & > * {
-    margin-bottom: 40px;
-  }
-  h2 {
-    font-size: 60px;
-    font-weight: bold;
+    margin-bottom: 60px;
   }
 }
 
