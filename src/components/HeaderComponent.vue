@@ -2,24 +2,31 @@
   <header>
     <div class="row">
       <!-- LEFTSIDE -->
-      <div class="col-4 leftside">
-        <img src="../assets/images/logo-restaurant-2x-400x77.png" alt="logo" />
+      <div class="col-5 leftside">
+        <!-- logo -->
+        <img src="../assets/images/logo-restaurant-2x-300x58.png" alt="logo" />
+        <p class="text-uppercase">{{ headerContent.table }}</p>
+        <div class="ms-5 w-50">
+          <h1 class="text-uppercase">{{ headerContent.title }}</h1>
+          <p>{{ headerContent.description }}</p>
+          <a class="border border-light p-3" href="#">EXPLORE THE MENU</a>
+        </div>
       </div>
       <!-- RIGHTSIDE -->
-      <div class="col-8 rightside">
-        <ul class="d-flex justify-content-center">
-          <li v-for="(item, index) in navHeader" :key="index">
-            <a href="#">{{ item }}</a>
-          </li>
-        </ul>
+      <div class="col-7 rightside">
+        <NavComponent :navHeader="navHeader" />
       </div>
     </div>
   </header>
 </template>
 
 <script>
+import NavComponent from "@/components/NavComponent.vue";
 export default {
   name: "HeaderComponent",
+  components: {
+    NavComponent,
+  },
   data() {
     return {
       navHeader: [
@@ -31,6 +38,12 @@ export default {
         "Bulletin",
         "Reservations",
       ],
+      headerContent: {
+        table: "the best table in town",
+        title: "fine dining experience",
+        description:
+          "Pellentesque vitae viverra risus, sagittis. Veneanatis ridiculus sclereiqsque nisi in urna nulla. Sit tempo e edt nislm ac felix.",
+      },
     };
   },
 };
@@ -45,15 +58,26 @@ header {
     height: 100%;
     .leftside {
       background-color: $black;
+      padding: 40px 80px;
+      a {
+        color: $white;
+      }
+      img {
+        margin-bottom: 130px;
+      }
+      p,
+      h1 {
+        margin-bottom: 70px;
+      }
+      h1 {
+        font-size: 50px;
+      }
     }
     .rightside {
       background-image: url("../assets/images/slider52x.jpg");
-      li {
-        margin: 15px;
-        a {
-          color: $white;
-        }
-      }
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 30px 60px;
     }
   }
 }
