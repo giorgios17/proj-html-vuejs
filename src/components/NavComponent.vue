@@ -22,7 +22,10 @@ export default {
 li {
   margin: 30px;
   a {
-    color: $white;
+    color: $silver;
+    &:hover {
+      color: $white;
+    }
   }
 }
 </style>
