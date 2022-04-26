@@ -31,4 +31,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: white;
 }
+.container-gs {
+  width: 80%;
+  margin: auto;
+  padding: 150px 0px;
+}
 </style>

@@ -9,7 +9,7 @@
           <p class="text-uppercase">{{ headerContent.table }}</p>
           <h1 class="text-uppercase">{{ headerContent.title }}</h1>
           <p>{{ headerContent.description }}</p>
-          <a class="border border-light p-3" href="#">EXPLORE THE MENU</a>
+          <a class="border border-light" href="#">EXPLORE THE MENU</a>
         </div>
       </div>
       <!-- RIGHTSIDE -->
@@ -60,11 +60,12 @@ header {
       background-color: $black;
       padding: 40px 80px;
       .leftContent {
-        margin-top: 100px;
+        margin-top: 120px;
         margin-left: 100px;
         width: 60%;
         a {
           color: $white;
+          padding: 10px 30px;
         }
         img {
           margin-bottom: 130px;
