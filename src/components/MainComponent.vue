@@ -7,6 +7,7 @@
     <NewsAndPromotions />
     <TakeOut />
     <MenuComponent />
+    <ProductAdvised />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import ProductOnEvidence from "./ProductOnEvidence.vue";
 import NewsAndPromotions from "./NewsAndPromotions.vue";
 import TakeOut from "./TakeOut.vue";
 import MenuComponent from "./MenuComponent.vue";
+import ProductAdvised from "./ProductAdvised.vue";
 
 export default {
   name: "MainComponent",
@@ -29,6 +31,7 @@ export default {
     NewsAndPromotions,
     TakeOut,
     MenuComponent,
+    ProductAdvised,
   },
 };
 </script>
