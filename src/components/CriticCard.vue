@@ -1,8 +1,14 @@
 <template>
-  <div :style="{ backgroundImage: `url(${img})` }">
-    <p class="text-uppercase">{{ name }}</p>
-    <h2 class="text-uppercase">{{ journal }}</h2>
-    <font-awesome-icon icon="fas fa-star" v-for="item in stars" :key="item" />
+  <div class="containerCritic" :style="{ backgroundImage: `url(${img})` }">
+    <h5 class="text-uppercase">{{ name }}</h5>
+    <h1 class="text-uppercase">{{ journal }}</h1>
+    <font-awesome-icon
+      class="me-2"
+      icon="fas fa-star"
+      v-for="item in stars"
+      :key="item"
+    />
+    <div class="line"></div>
     <p>{{ post }}</p>
     <a class="text-uppercase" href="#">{{ linkText }}</a>
   </div>
@@ -24,12 +30,17 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/style/variables";
-div {
+.containerCritic {
   background-size: cover;
+  background: linear-gradient(rgb(9, 9, 9), rgba(10, 10, 10, 0)), cover;
   color: $white;
-  padding: 160px 100px;
+  padding: 150px;
   & > * {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
+  }
+  .line {
+    width: 60px;
+    border-top: 1px solid #d6d6d6;
   }
   a {
     color: $white;
@@ -40,6 +51,15 @@ div {
       background-color: $white;
       color: $black;
     }
+  }
+  h5,
+  a {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+  }
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 56px;
   }
 }
 </style>

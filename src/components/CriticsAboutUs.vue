@@ -1,6 +1,6 @@
 <template>
   <div class="container-gs">
-    <h2 class="text-center">{{ title }}</h2>
+    <h1 class="text-center">{{ title }}</h1>
     <div class="row g-0">
       <div class="col-6 leftside">
         <img :src="activeCritic.img" :alt="activeCritic.name" />
@@ -77,8 +77,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h2 {
+h1 {
   margin-bottom: 100px;
+  font-style: italic;
 }
 .row {
   .leftside {
@@ -89,6 +90,10 @@ h2 {
   }
   .rightside {
     background-color: black;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 </style>
