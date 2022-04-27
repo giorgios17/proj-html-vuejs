@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="d-flex justify-content-between fw-bold">
-      <h3>{{ name }}</h3>
+      <h3 class="text-uppercase">{{ name }}</h3>
       <span>{{ price }}</span>
     </div>
     <p>{{ description }}</p>

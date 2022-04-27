@@ -5,7 +5,7 @@
       <div class="col-5 leftside">
         <!-- logo -->
         <img src="../assets/images/logo-restaurant-2x-300x58.png" alt="logo" />
-        <div class="leftContent">
+        <div>
           <CardTemplate
             :subtitle="bestTableInTown.subtitle"
             :title="bestTableInTown.title"
@@ -64,9 +64,12 @@ header {
     .leftside {
       background-color: $black;
       padding: 40px 80px;
+      img {
+        margin-bottom: 150px;
+      }
     }
     .rightside {
-      background: linear-gradient(rgba(9, 9, 9, 0.5), rgba(219, 211, 211, 0)),
+      background: linear-gradient(rgba(9, 9, 9, 0.849), rgba(241, 241, 241, 0)),
         url("../assets/images/slider52x.jpg");
       background-size: cover;
       background-repeat: no-repeat;

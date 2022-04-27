@@ -3,7 +3,9 @@
     <li v-for="(item, index) in navHeader" :key="index">
       <a href="#">{{ item }}</a>
     </li>
-    <font-awesome-icon icon="fas fa-shopping-cart" />
+    <a href="#">
+      <font-awesome-icon icon="fas fa-shopping-cart" />
+    </a>
   </ul>
 </template>
 
@@ -21,11 +23,11 @@ export default {
 @import "@/assets/style/variables";
 li {
   margin: 30px;
-  a {
-    color: $silver;
-    &:hover {
-      color: $white;
-    }
+}
+a {
+  color: $silver;
+  &:hover {
+    color: $white;
   }
 }
 </style>

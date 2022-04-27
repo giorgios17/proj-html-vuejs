@@ -1,9 +1,12 @@
 <template>
-  <div class="leftContent">
-    <p class="text-uppercase">{{ subtitle }}</p>
-    <h1 class="text-uppercase">{{ title }}</h1>
-    <p>{{ description }}</p>
-    <a href="#">{{ linkText }}</a>
+  <div class="d-flex">
+    <div class="line"></div>
+    <div class="text-content">
+      <p class="text-uppercase">{{ subtitle }}</p>
+      <h1 class="text-uppercase">{{ title }}</h1>
+      <p>{{ description }}</p>
+      <a href="#">{{ linkText }}</a>
+    </div>
   </div>
 </template>
 
@@ -22,9 +25,13 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/style/variables";
 @import "@/assets/style/reset";
-.leftContent {
+.line {
+  width: 50px;
+  border-top: 1px solid white;
+  margin-top: 60px;
+}
+.text-content {
   padding: 50px 60px;
-  width: 60%;
   p,
   h1 {
     margin-bottom: 70px;

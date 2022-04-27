@@ -10,10 +10,7 @@
         :description="item.description"
       />
     </div>
-    <div
-      class="menuLayout mainCourse"
-      :style="{ backgroundImage: `url(${menuImg})` }"
-    >
+    <div class="menuLayout mainCourse">
       <h2>MAIN COURSE</h2>
       <MenuItem
         v-for="(item, index) in mainCourse"
@@ -40,7 +37,6 @@
 // IMPORT COMPONENT
 import MenuItem from "@/components/MenuItem.vue";
 //IMPORT IMAGES
-import menuImg from "@/assets/images/misc22x.jpg";
 export default {
   name: "MenuComponent",
   components: {
@@ -48,7 +44,6 @@ export default {
   },
   data() {
     return {
-      menuImg,
       appetizer: [
         {
           name: "Ahi salmon nigiri",
@@ -135,12 +130,14 @@ export default {
 .containerMenu {
   padding: 150px 0px;
   .mainCourse {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.318)),
+      url("../assets/images/misc22x.jpg");
     color: white;
     transform: translateY(-50px);
   }
   .menuLayout {
     padding: 30px 50px;
-    background-color: rgb(212, 209, 209);
+    background-color: #e8e8e8;
     width: 500px;
     background-size: cover;
     h2 {
