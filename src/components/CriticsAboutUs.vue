@@ -14,6 +14,8 @@
           :linkText="activeCritic.linkText"
         />
       </div>
+    </div>
+    <div class="d-flex gap-5 my-5">
       <CriticCard
         v-for="(item, index) in otherCritics"
         :key="index"
@@ -75,10 +77,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  margin-bottom: 100px;
+}
 .row {
   .leftside {
     img {
       width: 100%;
+      height: 100%;
     }
   }
   .rightside {

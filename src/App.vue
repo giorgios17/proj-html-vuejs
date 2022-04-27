@@ -32,7 +32,7 @@ export default {
   color: white;
 }
 .container-gs {
-  width: 80%;
+  width: 70%;
   margin: auto;
   padding: 150px 0px;
 }

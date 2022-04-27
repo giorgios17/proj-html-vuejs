@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :style="{ backgroundImage: `url(${img})` }">
     <p class="text-uppercase">{{ name }}</p>
     <h2 class="text-uppercase">{{ journal }}</h2>
     <font-awesome-icon icon="fas fa-star" v-for="item in stars" :key="item" />
@@ -25,8 +25,9 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/style/variables";
 div {
+  background-size: cover;
   color: $white;
-  padding: 80px 100px;
+  padding: 160px 100px;
   & > * {
     margin-bottom: 40px;
   }

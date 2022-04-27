@@ -3,6 +3,8 @@
     <FirstContent />
     <SecondContent />
     <CriticsAboutUs />
+    <ProductOnEvidence />
+    <NewsAndPromotions />
   </main>
 </template>
 
@@ -10,12 +12,16 @@
 import FirstContent from "./FirstContent.vue";
 import SecondContent from "./SecondContent.vue";
 import CriticsAboutUs from "./CriticsAboutUs.vue";
+import ProductOnEvidence from "./ProductOnEvidence.vue";
+import NewsAndPromotions from "./NewsAndPromotions.vue";
 export default {
   name: "MainComponent",
   components: {
     FirstContent,
     SecondContent,
     CriticsAboutUs,
+    ProductOnEvidence,
+    NewsAndPromotions,
   },
 };
 </script>

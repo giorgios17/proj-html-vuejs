@@ -23,8 +23,7 @@ export default {
 @import "@/assets/style/variables";
 @import "@/assets/style/reset";
 .leftContent {
-  margin-top: 120px;
-  margin-left: 100px;
+  padding: 50px 60px;
   width: 60%;
   p,
   h1 {
