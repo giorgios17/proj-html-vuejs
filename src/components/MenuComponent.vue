@@ -1,11 +1,46 @@
 <template>
-  <div>
-    <MenuItem />
+  <div class="d-flex justify-content-center containerMenu">
+    <div class="menuLayout">
+      <h2>HORS D'OEUVRES</h2>
+      <MenuItem
+        v-for="(item, index) in appetizer"
+        :key="index"
+        :name="item.name"
+        :price="item.price"
+        :description="item.description"
+      />
+    </div>
+    <div
+      class="menuLayout mainCourse"
+      :style="{ backgroundImage: `url(${menuImg})` }"
+    >
+      <h2>MAIN COURSE</h2>
+      <MenuItem
+        v-for="(item, index) in mainCourse"
+        :key="index"
+        :name="item.name"
+        :price="item.price"
+        :description="item.description"
+      />
+    </div>
+    <div class="menuLayout">
+      <h2>DESSERTS</h2>
+      <MenuItem
+        v-for="(item, index) in desserts"
+        :key="index"
+        :name="item.name"
+        :price="item.price"
+        :description="item.description"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+// IMPORT COMPONENT
 import MenuItem from "@/components/MenuItem.vue";
+//IMPORT IMAGES
+import menuImg from "@/assets/images/misc22x.jpg";
 export default {
   name: "MenuComponent",
   components: {
@@ -13,6 +48,7 @@ export default {
   },
   data() {
     return {
+      menuImg,
       appetizer: [
         {
           name: "Ahi salmon nigiri",
@@ -96,4 +132,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.containerMenu {
+  padding: 150px 0px;
+  .mainCourse {
+    color: white;
+    transform: translateY(-50px);
+  }
+  .menuLayout {
+    padding: 30px 50px;
+    background-color: rgb(212, 209, 209);
+    width: 500px;
+    background-size: cover;
+    h2 {
+      margin-bottom: 80px;
+    }
+  }
+}
 </style>
