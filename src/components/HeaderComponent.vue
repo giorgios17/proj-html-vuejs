@@ -7,7 +7,7 @@
         <img src="../assets/images/logo-restaurant-2x-300x58.png" alt="logo" />
         <div class="leftContent">
           <CardTemplate
-            :table="bestTableInTown.table"
+            :subtitle="bestTableInTown.subtitle"
             :title="bestTableInTown.title"
             :description="bestTableInTown.description"
             :linkText="bestTableInTown.linkText"
@@ -43,7 +43,7 @@ export default {
         "Reservations",
       ],
       bestTableInTown: {
-        table: "the best table in town",
+        subtitle: "the best table in town",
         title: "fine dining experience",
         description:
           "Pellentesque vitae viverra risus, sagittis. Veneanatis ridiculus sclereiqsque nisi in urna nulla. Sit tempo e edt nislm ac felix.",

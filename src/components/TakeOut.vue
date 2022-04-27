@@ -1,14 +1,14 @@
 <template>
   <div class="row align-items-center">
     <div class="col-7 leftside">
-      <img src="../assets/images/slider32x.jpg" alt="slider32" />
+      <img src="../assets/images/slider72x-scaled.jpg" alt="slider32" />
     </div>
     <div class="col-5 rightside">
       <CardTemplate
-        :subtitle="fineDiningExperience.title"
-        :title="fineDiningExperience.subtitle"
-        :description="fineDiningExperience.description"
-        :linkText="fineDiningExperience.linkText"
+        :subtitle="takeOut.subtitle"
+        :title="takeOut.title"
+        :description="takeOut.description"
+        :linkText="takeOut.linkText"
       />
     </div>
   </div>
@@ -17,18 +17,18 @@
 <script>
 import CardTemplate from "@/components/CardTemplate.vue";
 export default {
-  name: "SecondContent",
+  name: "TakeOut",
   components: {
     CardTemplate,
   },
   data() {
     return {
-      fineDiningExperience: {
-        subtitle: "the best table in town",
-        title: "fine dining experience",
+      takeOut: {
+        subtitle: "Enjoy your meal at home",
+        title: "Takeout now available",
         description:
           "Pellentesque vitae viverra risus, sagittis. Veneanatis ridiculus sclereiqsque nisi in urna nulla. Sit tempo e edt nislm ac felix.",
-        linkText: "Explore the menu",
+        linkText: "View takeout menu",
       },
     };
   },

@@ -1,6 +1,6 @@
 <template>
   <div class="leftContent">
-    <p class="text-uppercase">{{ table }}</p>
+    <p class="text-uppercase">{{ subtitle }}</p>
     <h1 class="text-uppercase">{{ title }}</h1>
     <p>{{ description }}</p>
     <a href="#">{{ linkText }}</a>
@@ -11,7 +11,7 @@
 export default {
   name: "CardTemplate",
   props: {
-    table: String,
+    subtitle: String,
     title: String,
     description: String,
     linkText: String,
