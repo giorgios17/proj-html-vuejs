@@ -15,7 +15,7 @@
         <!-- <img src="../assets/images/info22x.jpg" alt="info22" /> -->
       </div>
     </div>
-    <div class="d-flex text-center gap-5 mt-5">
+    <div class="d-flex text-center mt-5 sushiContainer">
       <SushiCard
         v-for="(item, index) in foodType"
         :key="index"
@@ -83,7 +83,7 @@ export default {
   margin-bottom: 150px;
   .leftside {
     padding: 0px 40px;
-    padding-top: 80px;
+    padding-top: 40px;
     & > * {
       margin-bottom: 20px;
     }
@@ -104,5 +104,8 @@ export default {
       width: 100%;
     }
   }
+}
+.sushiContainer {
+  gap: 160px;
 }
 </style>

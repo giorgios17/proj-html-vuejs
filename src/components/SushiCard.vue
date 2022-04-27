@@ -2,6 +2,7 @@
   <div>
     <img :src="img" :alt="title" />
     <h3>{{ title }}</h3>
+    <div class="line"></div>
     <p>{{ description }}</p>
     <a href="#">{{ linkTitle }}</a>
   </div>
@@ -24,17 +25,26 @@ export default {
 @import "@/assets/style/reset";
 div > * {
   margin-bottom: 30px;
+  .line {
+    width: 60px;
+    border-top: 1px solid #d6d6d6;
+    margin: auto;
+    margin-bottom: 30px;
+  }
   a {
+    font-family: "Work Sans", sans-serif;
     color: $black;
     padding: 10px 30px;
-    border: 1px solid $silver;
+    border: 1px solid #d6d6d6;
     text-transform: uppercase;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
   }
 }
 h3 {
-  padding-bottom: 30px;
-  font-weight: bold;
-  border-bottom: 1px solid $silver;
+  font-family: "Bebas Neue", cursive;
   text-transform: uppercase;
 }
 </style>

@@ -46,6 +46,8 @@ export default {
     margin-bottom: 40px;
   }
   a {
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
     color: $white;
     padding: 10px 30px;
     border: 1px solid $white;
