@@ -1,8 +1,6 @@
 <template>
-  <div class="row align-items-center">
-    <div class="col-7 leftside">
-      <img src="../assets/images/slider72x-scaled.jpg" alt="slider32" />
-    </div>
+  <div class="row">
+    <div class="col-7 leftside"></div>
     <div class="col-5 rightside">
       <CardTemplate
         :subtitle="takeOut.subtitle"
@@ -41,10 +39,12 @@ export default {
   color: $white;
   background-color: $black;
   .leftside {
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    background-image: url("../assets/images/slider72x-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .rightside {
+    padding: 150px;
   }
 }
 </style>
