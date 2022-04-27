@@ -24,4 +24,7 @@ export default {
 p {
   margin-bottom: 70px;
 }
+h3 {
+  font-family: "Bebas Neue", cursive;
+}
 </style>

@@ -141,6 +141,8 @@ export default {
     width: 500px;
     background-size: cover;
     h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 45px;
       margin-bottom: 80px;
     }
   }

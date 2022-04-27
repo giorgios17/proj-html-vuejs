@@ -11,7 +11,11 @@
         <img src="../assets/images/signature-200x172.jpg" alt="signature" />
       </div>
       <!-- rightside -->
-      <div class="col-6 rightside"></div>
+      <div class="col-6 rightside">
+        <div class="text-center textImg">
+          <h6>CALIFORNIA ROLLS - 22$</h6>
+        </div>
+      </div>
     </div>
     <div class="d-flex text-center mt-5 sushiContainer">
       <SushiCard
@@ -97,10 +101,14 @@ export default {
   .rightside {
     background-image: url("../assets/images/info22x.jpg");
     background-size: cover;
-    padding: 50px;
+    padding: 10px;
     transition: transform 0.2s;
     &:hover {
       transform: scale(1.05);
+    }
+    .textImg {
+      color: $white;
+      padding-top: 120%;
     }
   }
 }
