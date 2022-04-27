@@ -11,9 +11,7 @@
         <img src="../assets/images/signature-200x172.jpg" alt="signature" />
       </div>
       <!-- rightside -->
-      <div class="col-6 rightside">
-        <!-- <img src="../assets/images/info22x.jpg" alt="info22" /> -->
-      </div>
+      <div class="col-6 rightside"></div>
     </div>
     <div class="d-flex text-center mt-5 sushiContainer">
       <SushiCard
@@ -100,9 +98,6 @@ export default {
     background-image: url("../assets/images/info22x.jpg");
     background-size: cover;
     padding: 50px;
-    img {
-      width: 100%;
-    }
   }
 }
 .sushiContainer {

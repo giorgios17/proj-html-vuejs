@@ -1,8 +1,6 @@
 <template>
-  <div class="row align-items-center">
-    <div class="col-7 leftside">
-      <img src="../assets/images/slider32x.jpg" alt="slider32" />
-    </div>
+  <div class="row g-0">
+    <div class="col-7 leftside"></div>
     <div class="col-5 rightside">
       <CardTemplate
         :subtitle="fineDiningExperience.title"
@@ -39,12 +37,13 @@ export default {
 @import "@/assets/style/variables";
 .row {
   color: $white;
-  background-color: $black;
   .leftside {
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    background-image: url("../assets/images/slider32x.jpg");
+    background-size: cover;
+  }
+  .rightside {
+    background-color: $black;
+    padding: 100px;
   }
 }
 </style>
