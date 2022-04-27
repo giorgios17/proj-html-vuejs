@@ -12,7 +12,7 @@
       </div>
       <!-- rightside -->
       <div class="col-6 rightside">
-        <img src="../assets/images/info22x.jpg" alt="info22" />
+        <!-- <img src="../assets/images/info22x.jpg" alt="info22" /> -->
       </div>
     </div>
     <div class="d-flex text-center gap-5 mt-5">
@@ -79,25 +79,30 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/style/variables";
-.leftside {
-  padding: 40px;
-  & > * {
-    margin-bottom: 20px;
+.row {
+  margin-bottom: 150px;
+  .leftside {
+    padding: 0px 40px;
+    padding-top: 80px;
+    & > * {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 70px;
+      margin: 30px 0px 40px 0px;
+    }
+    p {
+      font-size: 20px;
+    }
   }
-  h2 {
-    font-size: 70px;
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-    font-weight: bold;
-  }
-}
-
-.rightside {
-  padding: 50px;
-  img {
-    width: 100%;
+  .rightside {
+    background-image: url("../assets/images/info22x.jpg");
+    background-size: cover;
+    padding: 50px;
+    img {
+      width: 100%;
+    }
   }
 }
 </style>
