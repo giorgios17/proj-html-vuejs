@@ -2,7 +2,7 @@
   <div class="d-flex">
     <div class="line"></div>
     <div class="text-content">
-      <p class="text-uppercase">{{ subtitle }}</p>
+      <h5 class="text-uppercase">{{ subtitle }}</h5>
       <h1 class="text-uppercase">{{ title }}</h1>
       <p>{{ description }}</p>
       <a href="#">{{ linkText }}</a>
@@ -26,7 +26,7 @@ export default {
 @import "@/assets/style/variables";
 @import "@/assets/style/reset";
 .line {
-  width: 50px;
+  width: 100px;
   border-top: 1px solid white;
   margin-top: 60px;
 }
@@ -37,8 +37,13 @@ export default {
     margin-bottom: 70px;
   }
   h1 {
-    font-size: 62px;
-    font-weight: bold;
+    font-size: 90px;
+    font-family: "Bebas Neue", cursive;
+  }
+  h5 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 40px;
   }
   a {
     color: $white;

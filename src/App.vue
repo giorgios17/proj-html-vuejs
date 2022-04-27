@@ -26,7 +26,7 @@ export default {
 @import "~bootstrap";
 @import "@/assets/style/variables";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Lora, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -34,6 +34,6 @@ export default {
 .container-gs {
   width: 70%;
   margin: auto;
-  padding: 150px 0px;
+  padding: 80px 0px;
 }
 </style>

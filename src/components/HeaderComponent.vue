@@ -63,12 +63,13 @@ header {
     height: 100%;
     .leftside {
       background-color: $black;
-      padding: 40px 80px;
+      padding: 40px 120px;
       img {
-        margin-bottom: 150px;
+        margin-bottom: 130px;
       }
     }
     .rightside {
+      font-family: "Work Sans", sans-serif;
       background: linear-gradient(rgba(9, 9, 9, 0.849), rgba(241, 241, 241, 0)),
         url("../assets/images/slider52x.jpg");
       background-size: cover;

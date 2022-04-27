@@ -3,7 +3,9 @@
     <div class="row">
       <!-- leftside -->
       <div class="col-6 leftside">
-        <p>{{ lorem1 }}</p>
+        <p>
+          <span class="fw-bold">{{ subtitle }} </span>{{ lorem1 }}
+        </p>
         <h2>{{ lorem2 }}</h2>
         <p>{{ lorem3 }}</p>
         <img src="../assets/images/signature-200x172.jpg" alt="signature" />
@@ -41,8 +43,9 @@ export default {
   },
   data() {
     return {
+      subtitle: "HAC TELLUS, FELIS RISUS AT",
       lorem1:
-        "HAC TELLUS, FELIS RISUS AT mattis mattis. Eget cuismo semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.",
+        "mattis mattis. Eget cuismo semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etiam duis facilisis amet vulputate.",
       lorem2: "FOOD IS OUR COMMON GROUND, A UNIVERSAL EXPERIENCE.",
       lorem3:
         "Tristique tempus condimentum diam donec. Condimentum ullamcorper sit elementum hendrerit mi nulla in consequat, ut. Metus, nullam scelerisque netus viverra dui.",
@@ -77,9 +80,17 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/style/variables";
 .leftside {
-  padding: 70px;
+  padding: 40px;
   & > * {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 70px;
+    margin-top: 30px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    font-weight: bold;
   }
 }
 
