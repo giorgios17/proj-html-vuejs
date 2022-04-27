@@ -1,6 +1,6 @@
 <template>
   <div class="container-gs">
-    <h2 class="text-center">{{ title }}</h2>
+    <h1 class="text-center">{{ title }}</h1>
     <div class="d-flex flex-wrap gap-4">
       <NewsCard
         v-for="(item, index) in newsPromotions"
@@ -60,4 +60,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1 {
+  font-style: italic;
+  margin-bottom: 80px;
+}
 </style>

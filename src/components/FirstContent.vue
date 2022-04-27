@@ -98,6 +98,10 @@ export default {
     background-image: url("../assets/images/info22x.jpg");
     background-size: cover;
     padding: 50px;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 .sushiContainer {
