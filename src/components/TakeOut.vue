@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row g-0">
     <div class="col-7 leftside"></div>
     <div class="col-5 rightside">
       <CardTemplate

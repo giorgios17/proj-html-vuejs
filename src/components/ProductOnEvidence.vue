@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row g-0">
       <div class="col-12">
         <div class="text-center textImg">
           <h6>KUNG PAO CHICKEN - 32$</h6>

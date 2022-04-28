@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="row">
+    <div class="row g-0">
       <!-- LEFTSIDE -->
       <div class="col-5 leftside">
         <!-- logo -->
