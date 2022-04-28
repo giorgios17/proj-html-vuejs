@@ -3,6 +3,7 @@
     <HeaderComponent />
     <MainComponent />
     <FooterComponent />
+    <CopyrightComponent />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import MainComponent from "./components/MainComponent.vue";
 import FooterComponent from "./components/FooterComponent.vue";
+import CopyrightComponent from "./components/CopyrightComponent.vue";
 
 export default {
   name: "App",
@@ -17,6 +19,7 @@ export default {
     HeaderComponent,
     MainComponent,
     FooterComponent,
+    CopyrightComponent,
   },
 };
 </script>
