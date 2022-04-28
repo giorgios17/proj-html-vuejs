@@ -1,7 +1,7 @@
 <template>
   <div class="container-gs">
     <h1 class="text-center">{{ title }}</h1>
-    <div class="d-flex flex-wrap gap-4">
+    <div class="d-flex flex-wrap gap-4 pointer">
       <NewsCard
         v-for="(item, index) in newsPromotions"
         :key="index"
@@ -63,5 +63,8 @@ export default {
 h1 {
   font-style: italic;
   margin-bottom: 80px;
+}
+.pointer {
+  cursor: pointer;
 }
 </style>

@@ -136,7 +136,7 @@ export default {
     transform: translateY(-50px);
   }
   .menuLayout {
-    padding: 30px 50px;
+    padding: 80px 85px 40px 100px;
     background-color: #e8e8e8;
     width: 500px;
     background-size: cover;
