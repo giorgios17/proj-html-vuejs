@@ -5,14 +5,14 @@
       <h5 class="text-uppercase">{{ subtitle }}</h5>
       <h1 class="text-uppercase">{{ title }}</h1>
       <p>{{ description }}</p>
-      <a href="#"> {{ linkText }}</a>
+      <a href="#"><font-awesome-icon icon="fas fa-car" /> {{ linkText }}</a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CardTemplate",
+  name: "TakeOutCard",
   props: {
     subtitle: String,
     title: String,

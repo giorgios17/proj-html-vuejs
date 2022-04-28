@@ -2,7 +2,7 @@
   <div class="row g-0">
     <div class="col-7 leftside"></div>
     <div class="col-5 rightside">
-      <CardTemplate
+      <TakeOutCard
         :subtitle="takeOut.subtitle"
         :title="takeOut.title"
         :description="takeOut.description"
@@ -13,11 +13,11 @@
 </template>
 
 <script>
-import CardTemplate from "@/components/CardTemplate.vue";
+import TakeOutCard from "@/components/TakeOutCard.vue";
 export default {
   name: "TakeOut",
   components: {
-    CardTemplate,
+    TakeOutCard,
   },
   data() {
     return {
