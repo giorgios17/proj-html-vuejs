@@ -1,26 +1,39 @@
 <template>
-  <div>
-    <img :src="jumbotron" alt="jumbotron" />
+  <div class="bg">
+    <FoodCard
+      :name="foodInfo.name"
+      :price="foodInfo.price"
+      :description="foodInfo.description"
+    />
   </div>
 </template>
 
 <script>
-//IMPORT IMAGES
-import jumbotron from "@/assets/images/hero42x.jpg";
+import FoodCard from "@/components/FoodCard.vue";
+
 export default {
   name: "ProductAdvised",
+  components: {
+    FoodCard,
+  },
   data() {
     return {
-      jumbotron,
+      foodInfo: {
+        name: "Braised abalone",
+        price: 52,
+        description:
+          "Pretium accumsan porttitor viverra leo gravida mollis imperdiet. Fringilla nibh pharetra sociis leo amet.",
+      },
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-div {
-  img {
-    width: 100%;
-  }
+.bg {
+  background-image: url("../assets/images/hero42x.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
 }
 </style>

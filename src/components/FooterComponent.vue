@@ -6,7 +6,7 @@
     <div class="text-center">
       <img :src="footerLogo" alt="footerlogo" />
       <p>{{ footerText }}</p>
-      <div class="social" v-for="item in social" :key="item">
+      <div class="social" v-for="(item, index) in social" :key="index">
         <a :href="item.link">
           <font-awesome-icon :icon="item.icon" />
         </a>
