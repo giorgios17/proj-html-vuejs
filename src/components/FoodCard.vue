@@ -28,9 +28,9 @@ export default {
 @import "@/assets/style/reset";
 .card-gs {
   background-color: black;
-  padding: 100px 120px;
+  padding: 100px 100px;
   color: white;
-  width: 40%;
+  width: 35%;
   .line {
     width: 70px;
     border-top: 0.6px solid white;
