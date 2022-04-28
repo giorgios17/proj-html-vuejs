@@ -22,7 +22,7 @@ export default {
 @import "@/assets/style/reset";
 @import "@/assets/style/variables";
 li {
-  margin: 30px;
+  margin: 20px;
 }
 a {
   color: $silver;

@@ -58,19 +58,18 @@ export default {
 @import "@/assets/style/reset";
 @import "@/assets/style/variables";
 header {
-  height: 100vh;
   .row {
     height: 100%;
     .leftside {
       background-color: $black;
-      padding: 40px 120px;
+      padding: 40px 120px 170px 120px;
       img {
         margin-bottom: 130px;
       }
     }
     .rightside {
       font-family: "Work Sans", sans-serif;
-      background: linear-gradient(rgba(9, 9, 9, 0.849), rgba(241, 241, 241, 0)),
+      background: linear-gradient(rgba(9, 9, 9, 0.534), rgba(0, 0, 0, 0)),
         url("../assets/images/slider52x.jpg");
       background-size: cover;
       background-repeat: no-repeat;

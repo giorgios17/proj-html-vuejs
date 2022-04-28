@@ -36,7 +36,7 @@ export default {
   color: $white;
   padding: 150px;
   & > * {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
   .line {
     width: 60px;
